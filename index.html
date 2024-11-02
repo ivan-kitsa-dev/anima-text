@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anima Text</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            position: relative;
+            font-size: 20px;
+            font-family: «Lucida Console», monospace;
+        }
+
+        html, body {
+            background: black;
+            padding: 24px;
+        }
+
+        .anima-text {
+            color: transparent;
+            --color: aliceblue;
+        }
+        .anima-text::after {
+            content: attr(data-after-content);
+            color: var(--color);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            word-break: break-all;
+        }
+    </style>
+</head>
+<body>
+    <div class="anima-text">Hello world!</div>
+    <br>
+    <div class="anima-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus exercitationem laborum minus
+        pariatur placeat qui reiciendis rerum totam vel veritatis. Accusamus, officia, soluta. Alias aut
+        deserunt dolorum id ipsum. Amet.
+    </div>
+    <br>
+    <div class="anima-text">
+        The Chronicles of the Enchanted Forest
+        Once upon a time, in a land shrouded by mist and mystery, there existed an enchanted forest teeming with life and magic. The trees whispered ancient secrets, and the winds carried tales of old. In the heart of this forest stood a grand oak tree, its branches stretching towards the heavens, and its roots delving deep into the earth's core.
+        The inhabitants of the nearby village often spoke of the forest with a mix of awe and trepidation. Children were told stories of mystical creatures that roamed under the canopy—fairies with wings that shimmered like the morning dew, and giants whose footsteps could shake the very ground. Yet, despite the legends, few dared to venture beyond the safety of their homes.
+        One day, a young explorer named Amelia decided to uncover the truths hidden within the forest's depths. Armed with a satchel of provisions and a heart full of courage, she stepped beyond the familiar fields into the realm of the unknown. The forest greeted her with a symphony of sounds: leaves rustling, birds singing melodies unheard by human ears, and the distant trickle of a hidden brook.
+        As she journeyed deeper, the light dimmed, filtered through layers of leaves that formed a natural mosaic overhead. Strange flowers bloomed along the path, their petals glowing softly in hues of blue and violet. Amelia paused to examine one such flower, only to find it reacting to her touch by emitting a gentle, melodious hum.
+        Nightfall approached, and the forest transformed under the cloak of darkness. Bioluminescent fungi illuminated the ground, and the stars above seemed close enough to touch. Amelia set up camp beside a tranquil pond, its surface reflecting the celestial display above. As she drifted into sleep, she dreamed of the stories the villagers told, now feeling more real than ever.
+        Morning brought new wonders. A creature resembling a small dragonfly but emitting tiny sparks of light hovered nearby. It led her to a clearing where stood ruins of an ancient civilization, overgrown yet majestic. Intricate carvings adorned the stone structures, depicting tales of harmony between humans and the magical denizens of the forest.
+        Amelia spent days exploring the ruins, documenting her findings. She realized that the forest was not a place of fear but a haven of untapped beauty and knowledge. Determined to share her discoveries, she returned to her village. Her stories ignited a spark of curiosity among the people, leading to a newfound respect and connection with the forest.
+        Generations later, the village and the enchanted forest thrived together. The barriers of myth and misunderstanding dissolved, giving way to a harmonious coexistence. The tales of Amelia's journey became the foundation of a cultural renaissance, celebrating the unity between mankind and nature.
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
